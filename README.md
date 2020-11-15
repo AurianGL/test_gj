@@ -1,5 +1,7 @@
 # TEST FOR GJ
 
+app available at https://trusting-wing-003bc6.netlify.app/
+
 ## problems encountered :
 CORS on APIS feels quiet random,I had to setup a proxy server to be able to see data on development. Somehow had still some inconscistant problems in production (and not much time to do this). delt with it by handeling error on fetch and displaying data when available.
 
