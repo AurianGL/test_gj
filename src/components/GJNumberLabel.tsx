@@ -7,9 +7,9 @@ interface GJNumberLabelProps {
 
 export const GJNumberLabel: React.FC<GJNumberLabelProps> = ({number, label}) => {
     return (
-      <div>
-        <span>{label}</span>
-        <span>{number}</span>
+      <div className="p-2 bg-white rounded">
+        <div>{number}</div>
+        <div className='text.lg font-bold'>{label} </div>
       </div>
     );
 }

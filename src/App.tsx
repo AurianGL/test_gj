@@ -9,11 +9,13 @@ import {
 
 const App = () => {
 	return (
-		<>
-			<div></div>
+		<div	className="grid gap-2 md:grid-cols-2 sm:grid-cols-1 bg-gray-200">
+			<div>
+				Hello World
+			</div>
 			<div>
 				<CurrencyPairContext>
-					<div className='overflow-auto h-48 max-h-full sm:max-h-screen md:max-h-full lg:max-h-screen xl:max-h-full'>
+					<div className='overflow-auto h-48 m-5'>
 						<PairsCollection />
 					</div>
           <Suspense fallback={<div>Loading...</div>}>
@@ -21,7 +23,7 @@ const App = () => {
           </Suspense>
 				</CurrencyPairContext>
 			</div>
-		</>
+		</div>
 	);
 };
 
