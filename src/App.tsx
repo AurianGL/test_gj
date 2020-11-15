@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import {
 	AverageRateForCurrency,
+	AverageTicker,
 	CurrencyPairContext,
 	PairsCollection,
 } from './components';
@@ -9,9 +10,9 @@ import {
 
 const App = () => {
 	return (
-		<div	className="grid gap-2 md:grid-cols-2 sm:grid-cols-1 bg-gray-200">
+		<div	className="h-screen grid gap-2 md:grid-cols-2 sm:grid-cols-1 bg-gray-200">
 			<div>
-				Hello World
+				<AverageTicker/>
 			</div>
 			<div>
 				<CurrencyPairContext>
