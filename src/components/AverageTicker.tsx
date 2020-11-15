@@ -12,9 +12,13 @@ const tickersValueUrls = [
 const AverageCalc = async () => {
 	const DatasetOne: any = await getQuery(tickersValueUrls[0]);
 	const DatasetTwo: any = await getQuery(tickersValueUrls[1]);
-	const DatasetThree: any = await getQuery(tickersValueUrls[2]);
-	const average =
-		(DatasetOne.last + DatasetTwo.data.rates.USD + DatasetThree[0][1]) / 3;
+  const DatasetThree: any = await getQuery(tickersValueUrls[2]);
+  const valuesArr: number[] = []
+  if (DatasetOne) valuesArr.push(DatasetOne.last)
+  if (DatasetTwo) valuesArr.push(DatasetTwo.data.rates.USD)
+  if (DatasetThree) valuesArr.push(DatasetThree[0][1])
+
+	const average = valuesArr.reduce((a, b) => a + b, 0) / valuesArr.length
 	console.log(average);
 	return average;
 };
