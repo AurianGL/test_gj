@@ -33,9 +33,9 @@ export const PairsCollection: React.FC<pairCollectionProps> = () => {
 	}, []);
 
 	return (
-		<div className='grid grid-cols-3 gap-4'>
+		<div className='grid grid-cols-2 lg:grid-cols-4 gap-y-1'>
       {currencyPairs.map(thisPair =>
-      <div className='m-4' key={thisPair.symbol}>
+      <div className='text-center' key={thisPair.symbol}>
 				<Button  handleClick={() => setPair(thisPair.symbol)}>
 					{thisPair.name}
 				</Button>
