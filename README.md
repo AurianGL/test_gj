@@ -7,6 +7,7 @@ CORS on APIS feels quiet random,I had to setup a proxy server to be able to see 
 
 ## What I used
  * Typescript
+ * yarn
  * Create react app
  * React Context for sharing state between components
  * Tailwindcss for style and responsiveness with default settings
