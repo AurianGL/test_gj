@@ -24,7 +24,8 @@ Other than that considering the small amount of time I had to put into this, it'
 
 ## cors anywhere easy fix in dev
 
-```git clone https://github.com/Rob--W/cors-anywhere.git
+```
+git clone https://github.com/Rob--W/cors-anywhere.git
 cd cors-anywhere/
 npm install
 heroku create
