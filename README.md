@@ -13,7 +13,10 @@ CORS on APIS feels quiet random,I had to setup a proxy server to be able to see 
 
 ## What could be improved
 
-Apart from the CORS pb, type and interfaces are a bit all over the place. thats the main thing. Maybe a bit of hierarchy between atoms and molecules in the components folder wouldn't hurt. Other than that considering the small amount of time I had to put into this, it's quiet alright I think.
+Apart from the CORS pb, type and interfaces are a bit all over the place. thats the main thing. 
+Maybe a bit of hierarchy between atoms and molecules in the components folder wouldn't hurt.
+PurgeCss should be installed to preprocess the tailwind package.
+Other than that considering the small amount of time I had to put into this, it's quiet alright I think.
 
 ## dev environment
 
