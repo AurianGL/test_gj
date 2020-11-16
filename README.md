@@ -28,6 +28,7 @@ Other than that considering the small amount of time I had to put into this, it'
 cd cors-anywhere/
 npm install
 heroku create
-git push heroku master```
+git push heroku master
+```
 
 then create a `.env` file and add this line :  `PROXY_URL=#urlofyourherokuapp`
