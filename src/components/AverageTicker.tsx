@@ -19,7 +19,6 @@ const AverageCalc = async () => {
   if (DatasetThree) valuesArr.push(DatasetThree[0][1])
 
 	const average = valuesArr.reduce((a, b) => a + parseFloat(b), 0) / valuesArr.length
-	console.log(valuesArr);
 	return average;
 };
 

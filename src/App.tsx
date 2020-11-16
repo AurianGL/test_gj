@@ -8,7 +8,7 @@ import {
 
 const App = () => {
 	return (
-		<div className='h-screen md:grid md:gap-2 md:grid-cols-2 sm:grid-cols-1 bg-gray-200'>
+		<div className='min-h-screen min-w-screen md:grid md:gap-2 md:grid-cols-2 sm:grid-cols-1 bg-gray-200'>
 			<AverageTicker />
 			<div>
 				<CurrencyPairContext>
