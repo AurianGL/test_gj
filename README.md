@@ -21,3 +21,13 @@ Other than that considering the small amount of time I had to put into this, it'
 ## dev environment
 
 `yarn start` for starting dev server
+
+## cors anywhere easy fix in dev
+
+```git clone https://github.com/Rob--W/cors-anywhere.git
+cd cors-anywhere/
+npm install
+heroku create
+git push heroku master```
+
+then create a `.env` file and add this line :  `PROXY_URL=#urlofyourherokuapp`
